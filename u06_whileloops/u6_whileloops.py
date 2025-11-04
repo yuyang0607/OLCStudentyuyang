@@ -5,12 +5,14 @@
 # Write a program to print the multiplication table of 7 up to 10.
 # Example: 7 x 1 = 7, ..., 7 x 10 = 70.
 
-count = 8
-multiplication = 1
-while multiplication <= 10:
-    print(multiplication)
-    multiplication = multiplication + 1
-    print(count * multiplication)
+# count = 1
+# number = 7
+# while count <= 10:
+#     answer = 7 * count
+    
+#     print(f"{number} × {count} = {answer}")
+    
+#     count = count + 1
 
 # num1 = 10
 # num2 = 20
@@ -40,21 +42,34 @@ while multiplication <= 10:
 # Exercise 8: Sum of Even Numbers
 # Write a program to calculate the sum of even numbers between 1 
 # and 20 using a while loop. Example: Output = 110.
+ 
+# count = 1
+# totalsum = 0
+# while count <= 20:
+    
+#     print(count)
+#     if count % 2 == 0: # even number or not
+#         totalsum = totalsum + count
 
+#     count = count + 1
 
-
-
-
+# print(totalsum)
 #------------------------------------------------------------
 # Exercise 9: Guessing Game
 # Write a program where the user has to guess a random number 
-# between 1 and 10. Keep prompting until they guess correctly.
+# between 1 and 10. Keep prompting until they guess correct number
 
-
-
-
-
+# random_num = int(input("Enter a number from 1 to 10: "))
+# for i in random_num(11):
+#       print(i)
 #------------------------------------------------------------
 # Exercise 10: Input Validation for a Password
 # Write a program that keeps asking the user to enter a password.
 # If the password is correct, print "Access granted."
+
+#password = input("Enter your password: ")
+#while True:
+#    print("Access granted.")
+#    break
+#else:
+#	continue

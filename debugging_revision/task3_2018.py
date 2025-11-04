@@ -19,21 +19,39 @@
 #     else:
 #         students = True
 
-students = True #2. change False to True
+students = True #2. change false to true
 while students == True:
-    comp = int(input("Enter the Computing test score ")) #3. add int #4. add an additional bracket after adding int 
-    math = int(input("Enter the Mathematics test score ")) #1. add " 
-    joint_score = comp + math #7. change one of the word "comp" to "math"
-    if comp >= 100 and math >= 100: #6. Add = after >
+    comp = int(input("Enter the Computing test score ")) #3. add int( before input #4. add a bracket at the back of the line
+    math = int(input("Enter the Mathematics test score ")) #1. missing quotation mark
+    joint_score = comp + math #11. change one of the word "comp" to "math"
+    if comp >= 100 and math >= 100: #5. add = after >
         print("Student is awarded a gold award")
-    elif (comp >= 100 or math >= 100) and joint_score >= 180: #9. change and between comp and math to or #10. change or joint_score to and joint_score
+    elif (comp >= 100 or math >= 100) and joint_score >= 180: #8. change or joint_score to and joint_score #9. change and to or #10. Add a a bracket for math score and computing score
         print("Student is awarded a silver award")
-    elif comp >= 75 and math >=75: #8. change comp and math results to joint_score results
+    elif comp >= 75 and math >= 75:
         print("Student is awarded a bronze award")
     else:
         print("NO award this time, keep trying")
-    more_scores = input("Any more test scores to enter? Type 'Y' or 'N' ").upper()
-    if more_scores == 'N': #5. change More_scores to more_scores
-        students = False #11. Change True to False
+    more_scores = input("Any more test scores to enter? Type 'Y' or 'N' ")
+    if more_scores == 'N': #6. change More_score to more_score
+        students = False #7. Change True to False
     else:
         students = True
+# students = True #2. change False to True
+# while students == True:
+#     comp = int(input("Enter the Computing test score ")) #3. add int #4. add an additional bracket after adding int 
+#     math = int(input("Enter the Mathematics test score ")) #1. add " 
+#     joint_score = comp + math #7. change one of the word "comp" to "math"
+#     if comp >= 100 and math >= 100: #6. Add = after >
+#         print("Student is awarded a gold award")
+#     elif (comp >= 100 or math >= 100) and joint_score >= 180: #9. change and between comp and math to or #10. change or joint_score to and joint_score
+#         print("Student is awarded a silver award")
+#     elif comp >= 75 and math >=75: #8. change comp and math results to joint_score results
+#         print("Student is awarded a bronze award")
+#     else:
+#         print("NO award this time, keep trying")
+#     more_scores = input("Any more test scores to enter? Type 'Y' or 'N' ").upper()
+#     if more_scores == 'N': #5. change More_scores to more_scores
+#         students = False #11. Change True to False
+#     else:
+#         students = True

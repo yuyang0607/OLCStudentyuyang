@@ -10,35 +10,28 @@
 # Write a program to access and print the first, second, and last 
 # elements of a list using indexing.
 
-fruits = ["apple", "orange", "banana","durian"] # my list
-print(fruits[2]) # retrieve a specific value from the list
-
-
-
+# fruits = ["apple", "banana", "cherry", "date"]
+# print(f"{fruits[0]}")
+# print(f"{fruits[1]}")
+# print(f"{fruits[-1]}")
 #------------------------------------------------------------
 # Exercise 2: Adding Elements to a List
 # Write a program to add an element to the end of a list using 
 # append(), and add another element at a specific index using 
 # insert().
 
-
-fruits.append("durian") # add a new item to the list, adds at the back
-
-fruits.insert(1, "grapes") # add at specific position
-
-
-
-
-
+# fruits = ["apple", "banana", "cherry", "date"]
+# fruits.append("orange")
+# fruits.insert(-2, "durian")
+# print(fruits)
 #------------------------------------------------------------
 # Exercise 3: Using del() to Remove an Element by Index
 # Write a program to delete an element at a specific index.
 # Example: Remove the second color.
 
-del(fruits[1]) # deleting by the index
-
-
-
+# fruits = ["apple", "banana", "cherry", "date"]
+# del fruits[1]
+# print(fruits)
 #------------------------------------------------------------
 # Exercise 4: Using remove() to Remove an Element by Value
 # Write a program to remove a specific element by its value.
@@ -47,17 +40,10 @@ del(fruits[1]) # deleting by the index
 # colors.remove("green")  # Remove by value
 # print("Colors after removal: {}".format(colors))
 
-# fruits.remove("durian")
-
-# while True:
-#     if "durian" in fruits:
-#         fruits.remove("durian")
-#     else:
-#         break
-
-
-
-#------------------------------------------------------------
+# colors = ["red", "green", "blue", "yellow"]
+# colors.remove("")
+# print(colors)
+# #------------------------------------------------------------
 # Exercise 5: Using pop() to Remove and Retrieve an Element
 # Write a program to remove the last element of a list using pop().
 # Example: Remove and print the last color.
@@ -66,42 +52,37 @@ del(fruits[1]) # deleting by the index
 # print("Removed color: {}".format(removed_color))
 # print("Colors after pop: {}".format(colors))
 
-lastfruit = fruits.pop() # removes last one and assign to variable
-print(fruits)
-
-
-
-
+# colors = ["red", "green", "blue", "yellow"]
+# removed_color = colors.pop()
+# print(colors)
 #------------------------------------------------------------
 # Exercise 6: Modifying Elements in a List
 # Write a program to change the second element in a list to "pink."
 # colors = ["red", "green", "blue"]
 # colors[1] = "pink"  # Modify value at index 1
 # print("Modified colors: {}".format(colors))
-print(lastfruit)
-fruits[3] = "spikyfruit" # change the value
-print(fruits)
 
+# colors = ["red", "green", "blue"]
+# colors[1] = "pink"
+# print(colors)
 #------------------------------------------------------------
 # Exercise 7: Membership Check
 # Write a program to check if "blue" is in the list.
 # colors = ["red", "green", "blue"]
+
+# colors == True
+
+# colors = ["red", "green", "blue"]
 # if "blue" in colors:
-#     print("Blue is in the list.")
+#     print("blue is in the list")
 # else:
-#     print("Blue is not in the list.")
-
-# validation check - existence check
-checkfruit = input("Enter a fruit name: ")
-if checkfruit in fruits:
-    print(f"{checkfruit} is in the list")
-else:
-    print(f"{checkfruit} is not in the list")
-
+#     print("blue is not in the list")
+# validation check = existence check
 #------------------------------------------------------------
-
 ##### to loop through every single item
-for i in fruits:
-    print(i)
+# Exercise 8: Iterating Through a List
+# Write a program to print each fruit in a list using a for loop.
 
-# for i in range(5): 
+# fruits = ["apple", "banana", "cherry", "date"]
+# for i in fruits:
+#     print(f"I like to eat {i}")
