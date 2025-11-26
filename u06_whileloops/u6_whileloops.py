@@ -1,3 +1,77 @@
+# use the while loop and print out numbers from 0 to 5
+
+# use the while loop and print out numbers from 1 to 5
+
+# use the while loop and print out multiples of 5 from 5 to 50
+
+# use the while loop and print out numbers from 10 to 1
+
+# count = 0
+# while count < 6:
+#     print(count)
+#     count = count + 1
+
+# count = 1
+# while count < 6:
+#     print(count)
+#     count = count + 1
+
+# count = 5
+# while count < 51:
+#     print(count)
+#     count = count + 5
+
+# count = 10
+# while count < 11:
+#     print(count)
+#     count = count - 1
+#     if count == 0:
+#         break
+
+
+
+
+
+
+
+
+
+
+############################################
+# Write a program to help sort students to primary, secondary and JC
+
+# while loop validation
+
+### check for number.isdigit()
+while True: #infinite loop
+    age = input("Enter your age: ")
+    if age.isdigit():
+        age = int(age)
+        if age > 16:
+            print("You go to JC.")
+        elif age > 12:
+            print("You go to Secondary.")
+        elif age > 6:
+            print("You go to Primary.")
+        else:
+            print("You are too young.")
+        break # complete this program
+    else:
+        print("this is not a number") # testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###########################################################
 # Part 2. IN-CLASS Practice Exercises
 

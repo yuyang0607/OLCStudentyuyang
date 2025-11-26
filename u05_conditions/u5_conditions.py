@@ -1,3 +1,159 @@
+# compare 2 numbers to see which one is bigger
+# num1 = 10
+# num2 = 20
+
+#use if condition
+# if num1 > num2:
+#     # if the above condition is true, run this code
+#     print(f"{num1} is more than {num2}")
+
+# elif num1 == num2:
+#     print(f"{num1} is equal to {num2}")
+
+# else:
+#     #if the above condition is false, run this code
+#     print(f"{num1} is not more than {num2}")
+
+#PASSWORD PROGRAM
+# password = "Password123"
+# for i in range(3):
+#     inputpassword = input("Enter a password: ") # ask user to enter a password
+#     if i != password:
+#         print("Access denied")
+#         break # breaks out of loop
+#     else:
+#         print("Access granted")
+
+
+
+
+### RANDOM NUMBERS 
+# import random 
+# marks = 0
+# for i in range(30):
+#     num1 = random.randint(20, 50) # generating a random number between 20 and 50
+#     print(num1)
+
+# ### TASK: MAKE A MATH QUIZ
+
+# for i in range(10):
+#     # generate 2 random numbers
+#     num1 = random.randint(20, 50) # generate 1st random number #20
+#     num2 = random.randint(20, 50) # generate 2nd random number #30
+
+#     # ask the student to answer
+#     # What is 20 + 30 ?
+#     answer = int(input(f"What is {num1} + {num2}? "))
+
+#     # check if the student enter the correct answer
+#     if answer == num1 + num2:
+#         print("Correct.")
+#         marks = marks + 1
+#         #marks += 1
+#     else:
+#         print("Wrong.")
+
+# # tell the student their marks
+# print(f"You scored {marks} out of 10.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import random
+# marks = 0
+# num1 = random.randint
+# answer =
+# for i in range(10):
+#     if answer == num1 + num2:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################
+# RANDOM NUMBER GUESSING PROGRAM
+
+# Generate a random number
+
+# import random
+# print("Guess my number from 1 to 100!")
+# rannum = random.randint(1, 100)
+# # need to loop for 7 times
+
+# # input the number
+# for i in range(7):
+#     guess = int(input("Guess a number: "))
+# # check if bigger or smaller
+
+
+# # bigger
+#     if guess > rannum:
+#         print(f"Your guess {guess} is too big.")
+#     # smaller
+
+#     elif guess < rannum:
+#         print(f"Your guess {guess} is too small")
+#     # equal
+#     else:
+#         print(f"{guess} is correct!")
+#         break
+# else:
+#     print(f"You lost. The number was {rannum}")
+
+
+
+
 # Part 2. IN-CLASS Practice Exercises
 
 # Exercise 8: Pass/Fail Checker
@@ -72,3 +228,31 @@
 
 
 
+# Recap and Warm up - DO THIS
+
+# write a program to help categorise how much bus fare to pay
+
+# ask user to input an age
+
+# check if age is a valid number # <str>.isdigit()
+
+# use if, elif and else
+# age < 7, free
+# between 7 to 12, $2.00
+# between 13 to 21, $4.00
+# between 22 to 60, $10.00
+# 61 and above, $1.00
+
+# Print out the correct fare according to the age.
+
+# age = int(input("Enter your age: "))
+# if age < 7:
+#     print("bus fare is free")
+# elif age <= 12:
+#     print("bus fare is $2.00")
+# elif age <= 21:
+#     print("bus fare is $4.00")
+# elif age <= 60:
+#     print("bus fare is $10.00")
+# else:
+#     print("bus fare is $1.00")
