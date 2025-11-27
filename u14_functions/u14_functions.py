@@ -1,4 +1,63 @@
-###################################################
+# def hello():                                    # how to define a function
+#     print("Hello, how are you?")
+# hello()                                         # call the function
+# def greet(yourname, myname):                            # function with a parameter
+#     print(f"Hello {yourname}, how are you")
+#     print(f"My name is {myname}")
+# greet("Yu Yang","David")
+
+##########################################################################################################
+### imagine a scenario
+
+# area of 5 rectangle
+
+# rectangle1 = 65, 89
+# rectangle2 = 75, 12
+# rectangle3 = 4, 75
+# rectangle4 = 78, 36
+# rectangle5 = 14, 89
+
+# calculate the total area of all these 5 rectangles
+
+# def area_rectangle(length, breadth):
+#     area = length * breadth
+#     return area
+# rectangle1 = 65, 89
+# rectangle2 = 75, 12
+# rectangle3 = 4, 75
+# rectangle4 = 78, 36
+# rectangle5 = 14, 89
+# print(rectangle1)
+# total = rectangle1 + rectangle2 + rectangle3 + rectangle4 + rectangle5
+# print(total)
+
+########################################################################################################
+# Exercise 8: Simple Calculator
+# Write a function that takes two numbers and an operator (+, -, *, /)
+# and returns the result of the calculation.
+# Test the function with multiple operations.
+# print(calculator(10, 5, "+")) ## sampleoutput: 10 + 5 = 15
+# print(calculator(10, 5, "-"))
+# print(calculator(10, 5, "*"))
+# print(calculator(10, 5, "/"))
+
+def calculator(num1, num2, op):
+    if op == "+":
+        output = num1 + num2
+    elif op == "-":    
+        output = num1 - num2
+    elif op == "*":
+        output = num1 * num2
+    elif op == "/":
+        output = num1 / num2
+    return output
+num1 = int(input("Input first number: "))
+num2 = int(input("Input second number: "))        
+operation = input("Enter operation (+, -, *, /): ")
+answer = calculator(num1, num2, operation)
+print(f"{num1} {operation} {num2} = {answer}")
+
+########################################################################################################
 # Part 1: Learning Exercises
 
 # Exercise 1: A Simple Function
@@ -110,8 +169,8 @@
 # Call the function with a list of names.
 # greet_users(["Alice", "Bob", "Charlie"])
 
-friends = ["Alice", "Bob", "Charlie"]
-def greet_users(Alice, Bob, Charlie):
+# friends = ["Alice", "Bob", "Charlie"]
+# def greet_users(Alice, Bob, Charlie):
 
 
 
