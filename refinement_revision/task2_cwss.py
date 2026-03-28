@@ -6,12 +6,12 @@
 
 # The following program calculates the change in rates of these 5 gantries. 
 
-for i in range(5): 
-    expressway = input("Enter name of gantry:") 
-    old = float(input("Enter old rate:")) 
-    new = float(input("Enter new rate:")) 
-    change = new - old 
-    print("Change is",change) 
+# for i in range(5): 
+#     expressway = input("Enter name of gantry:") 
+#     old = float(input("Enter old rate:")) 
+#     new = float(input("Enter new rate:")) 
+#     change = new - old 
+#     print("Change is",change) 
 
 # Your program code and output for each of Tasks 2 should be saved 
 # in a single .ipynb file using JupyterLab. For example, your program 
@@ -30,12 +30,13 @@ for i in range(5):
 ###########################################################
 # Copy + Paste & Write your code here
 
-while True: 
-    expressway = input("Enter name of gantry:") 
-    old = float(input("Enter old rate:")) 
-    new = float(input("Enter new rate:")) 
-    change = new - old 
-    print("Change is",change) 
+# num_gantries = int(input("Enter the number of gantries: "))
+# for i in range(num_gantries): 
+#     expressway = input("Enter name of gantry:") 
+#     old = float(input("Enter old rate:")) 
+#     new = float(input("Enter new rate:")) 
+#     change = new - old 
+#     print("Change is",change) 
 
 ###########################################################
 # b)	The name of gantry is accepted if it is made up of only 
@@ -45,9 +46,22 @@ while True:
 ###########################################################
 # Copy + Paste & Write your code here
 
-
-
-
+num_gantries = int(input("Enter the number of gantries: "))
+for i in range(num_gantries): 
+    while True:
+        expressway = input("Enter name of gantry:") 
+        # add checks
+        if len(expressway) > 20:
+            print("Length of expressway cannot be more than 20")
+        elif expressway.isalpha() == False:
+            print("Expressway name can only contain letters")
+        else:
+            break
+    old = float(input("Enter old rate:")) 
+    new = float(input("Enter new rate:")) 
+    change = new - old 
+    print("Change is",change) 
+    
 ###########################################################
 # c)	The name of each gantry for which the ERP rate has 
 #       been increased is stored in a list and then displayed. [4] 
@@ -62,4 +76,60 @@ while True:
 #       in the ERP rate is displayed. [1] 
 ###########################################################
 # Copy + Paste & Write your code here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
