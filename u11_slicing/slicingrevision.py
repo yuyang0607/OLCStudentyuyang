@@ -2,104 +2,104 @@
 # Using + to Concatenate
 # List Slicing
 
-'''
-Question 1: Extract a portion of a list and creates a new list
-that contains only the first three elements of the original list.
-Example Input: [1, 2, 3, 4, 5]
-Example Output: [1, 2, 3]
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5]
-newlist = inlist[:3] # from start, up to 3 but not including 3
-print(newlist) # returns [1,2,3]
+# '''
+# Question 1: Extract a portion of a list and creates a new list
+# that contains only the first three elements of the original list.
+# Example Input: [1, 2, 3, 4, 5]
+# Example Output: [1, 2, 3]
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5]
+# newlist = inlist[:3] # from start, up to 3 but not including 3
+# print(newlist) # returns [1,2,3]
 
-'''
-Question 2: Get the last three items of a list.
-Ask the user for a list of numbers and print the last three items.
-Example Input: [10, 20, 30, 40, 50]
-Example Output: [30, 40, 50]
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5]
-newlist = inlist[-3:] # from last 3rd, to the end
-print(newlist) # returns [3,4,5]
+# '''
+# Question 2: Get the last three items of a list.
+# Ask the user for a list of numbers and print the last three items.
+# Example Input: [10, 20, 30, 40, 50]
+# Example Output: [30, 40, 50]
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5]
+# newlist = inlist[-3:] # from last 3rd, to the end
+# print(newlist) # returns [3,4,5]
 
-'''
-Question 3: Create a sub-list from a list using slicing.
-Given a list of elements, write a function that returns a
-sublist from the second element to the second last element.
-Example Input: [0, 1, 2, 3, 4, 5]
-Example Output: [1, 2, 3, 4]
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5]
-newlist = inlist[1:-1] # from the second element to the second last element
-print(newlist) # returns [2,3,4]
+# '''
+# Question 3: Create a sub-list from a list using slicing.
+# Given a list of elements, write a function that returns a
+# sublist from the second element to the second last element.
+# Example Input: [0, 1, 2, 3, 4, 5]
+# Example Output: [1, 2, 3, 4]
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5]
+# newlist = inlist[1:-1] # from the second element to the second last element
+# print(newlist) # returns [2,3,4]
 
-'''
-Question 4: Reverse a list using slicing.
-Write a function that takes a list and returns it reversed.
-Example Input: [1, 2, 3, 4, 5]
-Example Output: [5, 4, 3, 2, 1]
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5]
-newlist = inlist[::-1] # reverse it
-print(newlist) # returns [5,4,3,2,1]
+# '''
+# Question 4: Reverse a list using slicing.
+# Write a function that takes a list and returns it reversed.
+# Example Input: [1, 2, 3, 4, 5]
+# Example Output: [5, 4, 3, 2, 1]
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5]
+# newlist = inlist[::-1] # reverse it
+# print(newlist) # returns [5,4,3,2,1]
 
-'''
-Question 5: Slice a list into halves.
-Divide a list into two equal halves and returns both halves.
-You may assume that the list has an even number of items
-Example Input: [1, 2, 3, 4, 5, 6]
-Example Output: [1, 2, 3]  [4, 5, 6]
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5, 6]
-listlen = len(inlist) # find length of list
-midindex = listlen // 2 # find the middle index / position
-first_half = inlist[:midindex]
-second_half = inlist[midindex:]
-print(first_half) # returns [1, 2, 3]
-print(second_half) # returns [4, 5, 6]
+# '''
+# Question 5: Slice a list into halves.
+# Divide a list into two equal halves and returns both halves.
+# You may assume that the list has an even number of items
+# Example Input: [1, 2, 3, 4, 5, 6]
+# Example Output: [1, 2, 3]  [4, 5, 6]
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5, 6]
+# listlen = len(inlist) # find length of list
+# midindex = listlen // 2 # find the middle index / position
+# first_half = inlist[:midindex]
+# second_half = inlist[midindex:]
+# print(first_half) # returns [1, 2, 3]
+# print(second_half) # returns [4, 5, 6]
 
-'''
-Question 6: Extract every second element from a list.
-Write a function that returns a list of every second element from the given list.
-Example Input: ['a', 'b', 'c', 'd', 'e', 'f']
-Example Output: ['b', 'd', 'f']
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5, 6]
-newlist = inlist[1::2] # start from 1 (2nd place, to end, increments of 2)
-print(newlist) # returns [2,4,6]
+# '''
+# Question 6: Extract every second element from a list.
+# Write a function that returns a list of every second element from the given list.
+# Example Input: ['a', 'b', 'c', 'd', 'e', 'f']
+# Example Output: ['b', 'd', 'f']
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5, 6]
+# newlist = inlist[1::2] # start from 1 (2nd place, to end, increments of 2)
+# print(newlist) # returns [2,4,6]
 
-'''
-Question 7: Remove the first and last elements of a list using slicing.
-Create a function that takes a list and returns it without
-the first and last elements.
-Example Input: [0, 1, 2, 3, 4]
-Example Output: [1, 2, 3]
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5, 6]
-newlist = inlist[1:-1]
-print(newlist) # returns [2, 3, 4, 5]
+# '''
+# Question 7: Remove the first and last elements of a list using slicing.
+# Create a function that takes a list and returns it without
+# the first and last elements.
+# Example Input: [0, 1, 2, 3, 4]
+# Example Output: [1, 2, 3]
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5, 6]
+# newlist = inlist[1:-1]
+# print(newlist) # returns [2, 3, 4, 5]
 
-'''
-Question 8: Create code to reverse the order of elements in a
-list only from the second to the last but one.
-Example Input: [1, 2, 3, 4, 5, 6]
-Example Output: [1, 5, 4, 3, 2, 6]
-'''
-## Write and test your code here
-inlist = [1, 2, 3, 4, 5, 6]
-second_to_last = inlist[1:-1] # get 2nd to last
-reversed_middle = second_to_last[::-1] # reverse 2nd to last
-liststart = [inlist[0]] # retrieves 1st char and converts to list
-listend = [inlist[-1]] # retrieve last char and convert to list
-newlist = liststart + reversed_middle + listend
-print(newlist) # returns [1, 5, 4, 3, 2, 6]
+# '''
+# Question 8: Create code to reverse the order of elements in a
+# list only from the second to the last but one.
+# Example Input: [1, 2, 3, 4, 5, 6]
+# Example Output: [1, 5, 4, 3, 2, 6]
+# '''
+# ## Write and test your code here
+# inlist = [1, 2, 3, 4, 5, 6]
+# second_to_last = inlist[1:-1] # get 2nd to last
+# reversed_middle = second_to_last[::-1] # reverse 2nd to last
+# liststart = [inlist[0]] # retrieves 1st char and converts to list
+# listend = [inlist[-1]] # retrieve last char and convert to list
+# newlist = liststart + reversed_middle + listend
+# print(newlist) # returns [1, 5, 4, 3, 2, 6]
 
 
 '''
@@ -109,6 +109,10 @@ print(newlist) # returns [1, 5, 4, 3, 2, 6]
 '''
 ## Write and test your code here
 
+list = "hello"
+string = list[:3]
+print(string)
+
 '''
 # Question 10: Extract the last three characters from a string
 # Test case 1: example input: hello, example output: llo
@@ -116,6 +120,9 @@ print(newlist) # returns [1, 5, 4, 3, 2, 6]
 '''
 ## Write and test your code here
 
+i = "Python"
+s = i[-3:]
+print(s)
 
 '''
 # Question 11: Extract a subset of a list from index 2 to 5
@@ -125,7 +132,9 @@ example output: [3, 4, 5, 6]
 example output: [30, 40, 50]
 '''
 ## Write and test your code here
-
+numlist = [1, 2, 3, 4, 5, 6, 7, 8]
+i = numlist[2:6]
+print(i)
 
 '''
 # Question 12: Extract every second character from a string
@@ -134,7 +143,8 @@ example output: [30, 40, 50]
 '''
 ## Write and test your code here
 
-
+t = "hello"
+print(t[1::2])
 
 '''
 # Question 13: 
@@ -146,6 +156,10 @@ example output: [30, 40, 50]
 '''
 ## Write and test your code here
 
+instring = "abcde"
+midindex = len(instring) // 2 ### gives you the middle position 
+output = instring[midindex - 1: midindex + 2]
+print(output)
 
 '''
 # Question 14: Extract the first half of a string
@@ -154,6 +168,9 @@ example output: [30, 40, 50]
 '''
 ## Write and test your code here
 
+a = "Python"
+first_half = len(a) // 2
+print(a[0:first_half:1])
 
 '''
 # Question 15: Extract the second half of a string
@@ -161,6 +178,10 @@ example output: [30, 40, 50]
 # Test case 2: example input: Python, example output: hon
 '''
 ## Write and test your code here
+
+w = "hello"
+second_half = len(w) // 2
+print(w[second_half::1])
 
 '''
 Question 16:
@@ -189,7 +210,10 @@ Normal Test: Input: "S1234567D", Output: True
 Error Test: Input: "A1234567D", Output: False
 Boundary Test: Input: "S123456", Output: False
 '''
+#validate_nric("S1234567D") # return True or False
 ## Write and test your code here
+
+
 
     
 

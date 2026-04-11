@@ -108,7 +108,8 @@ print(newlist) # returns [1, 5, 4, 3, 2, 6]
 # Test case 2: example input: Python, example output: Pyt
 '''
 ## Write and test your code here
-
+s = "hello"
+print(s[:3])
 '''
 # Question 10: Extract the last three characters from a string
 # Test case 1: example input: hello, example output: llo
@@ -116,7 +117,8 @@ print(newlist) # returns [1, 5, 4, 3, 2, 6]
 '''
 ## Write and test your code here
 
-
+s = 'hello'
+print(s[-3:])
 '''
 # Question 11: Extract a subset of a list from index 2 to 5
 # Test case 1: example input: 1 2 3 4 5 6 7, 
